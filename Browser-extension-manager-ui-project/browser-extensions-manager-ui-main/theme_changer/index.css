@@ -1,0 +1,27 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+body.dark-mode {
+    --background-color: black;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.theme-toggle img {
+    width: 32px;
+    height: 32px;
+}
